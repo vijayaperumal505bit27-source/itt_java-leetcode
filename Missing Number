@@ -1,0 +1,11 @@
+int missingNumber(int* nums, int numsSize) {
+    int i;
+    int n=numsSize;
+    int sum=0;
+    int total=(n*(n+1))/2;
+    for(i=0;i<n;i++)
+    {
+        sum+=nums[i];
+    }
+    return total-sum;
+}
